@@ -68,10 +68,24 @@ font-family: 'Caveat Brush', cursive;*/
   left:0;
 }
 
+.button {
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  display: inline-block;
+  user-select: none;
+  -webkit-user-select: none; /* Chrome/Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
+  -o-user-select: none;
+  cursor:pointer;
+  box-shadow: 0px 3px 5px black;
+}
+
 body {
-  background-color: pink;
+  background-color: black;
   /*background:url('lost.jpg') no-repeat center center  fixed;*/
-  background:url('StarSky720.mp4') no-repeat center center  fixed;
+  /*background:url('StarSky720.mp4') no-repeat center center  fixed;*/
   background-size: 100%;
   overflow-x:hidden;
   webkit-background-size: cover;
@@ -85,7 +99,9 @@ body {
 }
 
 #picture_frame{
-  z-index: 10;
+  opacity:0;
+  display:none;
+  z-index: -2;
 }
 
 
