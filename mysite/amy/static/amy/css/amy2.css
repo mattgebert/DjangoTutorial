@@ -104,6 +104,12 @@ body {
   z-index: -2;
 }
 
+.movingImg {
+  position:absolute;
+  opacity:1;
+  display:none;
+  z-index: 1;
+}
 
 
 /*TODO: ADJUST RESIZE JS FOR INSTANCES WHERE HEIGHT > WIDTH*/

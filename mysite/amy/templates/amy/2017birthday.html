@@ -7,7 +7,7 @@
   <meta http-equiv="Cache-Control" content="no-store"/>
 
   <!-- Stylesheets External -->
-  {% load static %}
+  {% load staticfiles %}
   <link rel="stylesheet" href="{% static 'amy/css/bootstrap.min.css' %}" />
   <link rel="stylesheet" href="{% static 'amy/css/jquery-ui.min.css' %}" />
   <link rel="stylesheet" href="{% static 'amy/css/font-awesome.min.css' %}" />
@@ -119,15 +119,19 @@
   </div>
   <div class="frame" id="picture_frame">
     {% if img_set %}
-    <div style="display: table; position:absolute; width:100%; height:100%">
+    <div style="display: table; position:absolute; width:100%; height:100%; z-index:2;">
       <div style="display: table-cell; vertical-align: middle; text-align:center">
-        <div class="button" id="message_button" onclick=returnToMessage() style="margin-left: auto; margin-right:auto;">
+        <div class="button" id="message_button" onclick=returnToMessage() style="margin-left: auto; margin-right:auto; z-index: 100">
           Lets go Back!</div>
       </div>
     </div>
     <div id="image_set" style="">{%for image in img_set%}
-      <img src="/{{ image.img.url|slice:'4:' }}" textarea="{{image.description}}"/>
+      <img class="movingImg" id="db_img{{forloop.counter}}" src="/{{ image.img.url|slice:'4:' }}" textarea="{{image.description}}"/>
     {%endfor%}</div>
+
+    <script type="text/javascript">
+        var db_img_count = {{img_set|length}}
+    </script>
     {% endif %}
   </div>
 

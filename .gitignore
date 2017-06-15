@@ -1,3 +1,7 @@
 PhotoMontage/
 mysite/PhotoMontage/
 mysite/amy/static/amy/image_sets/
+.gitignore
+runcommand.info
+static_root/
+mysite/static_root/
