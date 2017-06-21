@@ -3,7 +3,7 @@ from amy.models import Image, ImageSet
 from django.db import models
 from django.core.files import File as FileWrapper
 
-def imgInSet(setName="set", filepath='/home/matt/Documents/WebDistros/DjangoTutorial/mysite/PhotoMontage/'):
+def imgInSet(setName="set", filepath=''):
     print("Begin import...\n")
 
     currentImages = Image.objects.all()

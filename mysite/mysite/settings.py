@@ -25,7 +25,10 @@ SECRET_KEY = 'tx4ym4kpi+h&h&$4go(18%s5)df+c%)00ggz)w$db+du!k05-a'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.1.6',
+ALLOWED_HOSTS = ['128.199.119.243',
+		 '0.0.0.0',
+		 'photafy.me',
+		 '192.168.1.6',
                  '220.240.161.97',
                  'localhost',
                  '127.0.0.1',
