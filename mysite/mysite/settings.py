@@ -26,15 +26,17 @@ SECRET_KEY = 'tx4ym4kpi+h&h&$4go(18%s5)df+c%)00ggz)w$db+du!k05-a'
 DEBUG = True
 
 ALLOWED_HOSTS = ['128.199.119.243',
-		 '0.0.0.0',
-		 'photafy.me',
-		 '192.168.1.:',
-		 '192.168.0.17',
-                 '220.240.161.97',
-                 'localhost',
-                 '127.0.0.1',
-                 '[::1]',
-                ]
+	'10.0.0.21',
+	'0.0.0.0',
+	'photafy.me',
+	'192.168.1.:',
+	'192.168.0.17',
+	'220.240.161.97',
+	'localhost',
+	'127.0.0.1',
+	'[::1]',
+	'192.168.1.7',
+ ]
 
 
 # Application definition
@@ -133,6 +135,6 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
-STATIC_ROOT = os.path.join(BASE_DIR,"static_root/")
 STATIC_URL = "/static/"
+STATIC_ROOT = os.path.join(BASE_DIR,"static_root/")
 #STATIC_URL = '/static/'
