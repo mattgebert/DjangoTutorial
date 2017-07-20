@@ -94,7 +94,7 @@ function animateSlides() {
         imgHeight = parseInt(im.css("height"));//height();
       };
       var greaterHeight = imgHeight * 7/4 / viewportHeight;
-      if(imgHeight > 1) {
+      if(greaterHeight > 1) {
         //Scale Width and Height
         im.css("width", imgWidth/greaterHeight);
         im.css("height", imgHeight/greaterHeight);
